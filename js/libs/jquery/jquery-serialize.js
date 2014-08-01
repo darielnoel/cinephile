@@ -1,0 +1,1 @@
+jQuery.fn.serializeObject=function(){var a,b;return a=this.serializeArray(),b={},jQuery.each(a,function(){var a;a=null!=this.value?this.value:"",null!=b[this.name]?(b[this.name].push||(b[this.name]=[b[this.name]]),b[this.name].push(a)):b[this.name]=a}),b};

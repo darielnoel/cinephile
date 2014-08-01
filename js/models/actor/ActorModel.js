@@ -1,0 +1,1 @@
+define(["underscore","backbone"],function(a,b){var c=b.Model.extend({defaults:function(){return{firstName:"",lastName:"",gender:"",birthDate:"",movieCollection:""}}});return c});

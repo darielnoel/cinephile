@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title></title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script data-main="js/main" src="js/libs/require/require.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Cinephile</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#/movies">Movies</a>
+                    </li>
+                    <li>
+                        <a href="#/actors">Actors</a>
+                    </li>
+                </ul>
+                <form id="search-box" class="navbar-form navbar-right" role="form">
+
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-btn">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span class="capitalize" data-bind="label">Movies</span>
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Movies</a>
+                                </li>
+                                <li><a href="#">Actors</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /btn-group -->
+                        <input type="text" name="query" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit">
+                                <span class="glyphicon glyphicon-search"></span>
+                            </button>
+                        </span>
+                    </div>
+
+                </form>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div id="cinephileapp" class="col-lg-12">
+                <section id="content" style="display: block;">
+                    <div id="recent-movies"></div>
+                    <div id="movies-list"></div>
+                    <div id="movie-edit"></div>
+                    <div id="movie-detail"></div>
+                    <div id="actors-list"></div>
+                    <div id="actor-edit"></div>
+                    <div id="actor-detail"></div>
+                    <div id="search-movies-list"></div>
+                    <div id="search-actors-list"></div>
+                </section>
+
+                <footer style="display: block;">
+
+                </footer>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p class="text-muted">Copyright © Cinephile 2014</p>
+        </div>
+    </div>
+</body>
+
+</html>

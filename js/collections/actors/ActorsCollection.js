@@ -1,0 +1,1 @@
+define(["underscore","backboneLocalStorage","backbone","models/actor/ActorModel"],function(a,b,c,d){return ActorsCollection=c.Collection.extend({model:d,localStorage:new c.LocalStorage("bb-actors"),getByNameSubstr:function(a){var b,c=this;return b=a?c.filter(function(b){return b.get("firstName").indexOf(a)>=0}):c.models}})});
