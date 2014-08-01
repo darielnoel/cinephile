@@ -1,9 +1,8 @@
+<% if (data.length > 0) { %>
 <header>
+	<h4>Relates Movies</h4>
+	<hr>
 </header>
-<% if (data.length == 0) { %>
-    <div class="col-lg-12 col-md-12 col-xs-12">
-    	<p style="font-size:2em">:( Please, <a href="#/movies/new">add</a> some movie</p>
-    </div>
 <% }; %>
 <% _.each(data, function(item) { %>
     <div class="col-lg-3 col-md-4 col-xs-6 thumb">
